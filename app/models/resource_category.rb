@@ -1,3 +1,6 @@
+#Represent a category of resources that organizations can offer
+#Examples: food assistance, shelter, medical aid, etc.
+
 class ResourceCategory < ApplicationRecord
 
   has_and_belongs_to_many :organizations

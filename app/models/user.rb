@@ -1,3 +1,4 @@
+# Represents a user in the system, either an admin or an organization member.
 class User < ApplicationRecord
 
   enum role: [:admin, :organization]

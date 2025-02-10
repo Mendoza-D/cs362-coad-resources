@@ -1,3 +1,4 @@
+# Represents a request for assistance from users,. assigned to an organization and a resource category.
 class Ticket < ApplicationRecord
 
   belongs_to :region

@@ -16,6 +16,7 @@ gem 'pagy', '~> 6.0.0'
 gem 'phony_rails', '~> 0.15.0'
 gem 'puma', '~> 3.12'
 gem 'rails', '~> 5.2.4.1'
+gem 'marcel', '~> 0.3.3'
 gem 'recaptcha', '~> 5.12.3', require: 'recaptcha/rails'
 gem 'sassc-rails', '~> 2.1.2'
 gem 'sqlite3', '~> 1.5.4'
@@ -49,4 +50,4 @@ group :test do
   gem 'webdrivers', '~> 3.0'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'

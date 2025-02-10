@@ -1,3 +1,4 @@
+# Represents a geographical region where tickets can be created.
 class Region < ApplicationRecord
 
   has_many :tickets
