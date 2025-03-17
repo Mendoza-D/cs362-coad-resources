@@ -5,10 +5,12 @@ class Ticket < ApplicationRecord
   belongs_to :resource_category
   belongs_to :organization, optional: true
 
+  phony_normalize :phone, default_country_code: 'US'
+
   validates_presence_of :name, :phone, :region_id, :resource_category_id
   validates_length_of :name, minimum: 1, maximum: 255, on: :create
   validates_length_of :description, maximum: 1020, on: :create
-  validates :phone, phony_plausible: true
+  validates :phone, phony_plausible: {default_country: 'US'}
 
   scope :open, -> () { where closed: false, organization_id: nil }
   scope :closed, -> () { where closed: true }
